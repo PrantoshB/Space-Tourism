@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./assets/favicon-32x32.png">
+  <link rel="stylesheet"
+    href="destination.css">
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+  <header>
+    <nav class="main-header">
+      <img id="sitelogo"
+        src="assets/shared/logo.svg"
+        alt="logo">
+      <hr id="menuline">
+      <button data-image="hamburger"
+        id="menu-btn"></button>
+      <div data-visible="false"
+        class="nav-menu">
+        <ul>
+          <a href="index.html"><span id="number">00</span><span id="menuitem">Home</span></a>
+          <a href="destination.html"><span id="number">01</span><span id="menuitem">Destination</span></a>
+          <a href="#"><span id="number">02</span><span id="menuitem">Crew</span></a>
+          <a href="#"><span id="number">03</span><span id="menuitem">Technology</span></a>
+        </ul>
+      </div>
+
+    </nav>
+
+  </header>
+
+  <section class="destination">
+    <p class="main-dest-title"><span id="number">01</span><span id="pick-y-d">PICK YOUR DESTINATION</span></p>
+    <div class="planetcontainer">
+      <img src="assets/destination/image-moon.png"
+        alt="image-moon"
+        class="planet" id="planet">
+      <div class="listcontainer">
+        <ul class="planetlist">
+          <li id="active" class="moon">MOON</li>
+          <li class="mars">MARS</li>
+          <li class="europa">EUROPA</li>
+          <li class="titan">TITAN</li>
+        </ul>
+
+        <h2 class="dest_title">
+          MOON
+        </h2>
+
+        <p class="dest_info">
+          See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+          regain perspective and come back refreshed. While you’re there, take in some history
+          by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+        <hr id="desthr">
+        <div class="extracontainer">
+          <div class="distance">
+            <p class="extratitle">
+              Avg. distance
+            </p>
+            <p class="extrainfo">
+              384,400 km
+            </p>
+          </div>
+          <div class="time">
+            <p class="extratitle">
+              Est. travel time
+            </p>
+            <p class="extrainfo">
+              3 days
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<script type="module" src="fetch-destination.js"></script>
+</body>
+
+</html>
