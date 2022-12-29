@@ -1,0 +1,168 @@
+@import 'utils/common.scss';
+
+body {
+    @include BodyBackground(url('assets/destination/background-destination-mobile.jpg'))
+}
+
+.planetlist {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-left: 9%;
+}
+
+.planetlist li {
+    margin-right: 25%;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.95rem;
+}
+
+.dest_title {
+    font-family: 'Bellefair', serif;
+    font-size: 4rem;
+    text-align: center;
+    margin: 4% 0 0 0;
+    color: white;
+}
+
+.destination {
+    @include ColumnFlex;
+}
+
+.planet {
+    width: 10rem;
+    margin-bottom: 5%;
+}
+
+.main-dest-title {
+    @include BarlowFont;
+    display: flex;
+    color: white;
+    width: 100%;
+    font-weight: 400;
+    justify-content: center;
+    margin-bottom: 15%;
+}
+
+#number {
+    margin-right: 2%;
+}
+
+.dest_info {
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 5%;
+    margin: 0;
+}
+
+.extratitle {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.extrainfo {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 2.5rem;
+    margin: 0 0 3% 0;
+    text-transform: uppercase;
+}
+
+#active {
+    padding-bottom: 3%;
+    color: white;
+    border-bottom-style: solid;
+}
+
+hr {
+    width: 95%;
+    border: 0.1px solid #d0d6f960;
+}
+
+@media only screen and (min-width:768px) {
+    body {
+        @include BodyBackground(url('assets/destination/background-destination-desktop.jpg'))
+    }
+
+    .main-dest-title {
+        justify-content: left;
+        margin: 0;
+    }
+
+    .destination {
+        padding: 1% 7%;
+    }
+
+    .planet {
+        width: 30%;
+        height: 30%;
+        padding: 5%;
+        margin: 0;
+    }
+
+    .main-dest-title {
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
+
+    .planetcontainer {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dest_title {
+        text-align: left;
+        font-weight: 400;
+        margin: 0;
+        font-size: 5rem;
+    }
+
+    .dest_info {
+        padding: 0;
+        text-align: left;
+        font-weight: 100;
+        color: #8b91b1ec;
+    }
+
+    .planetlist {
+        justify-content: left;
+        padding: 0;
+    }
+
+    #active {
+        padding-bottom: 1%;
+    }
+
+    .planetlist li {
+        margin-right: 7%;
+        color: rgba(173, 173, 173, 0.822);
+    }
+
+    .listcontainer {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-right: 10%;
+    }
+
+    .extracontainer {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    #desthr {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .extratitle {
+        font-size: 0.9rem;
+        font-weight: 100;
+        color: #8b91b1ec;
+    }
+
+    .extrainfo {
+        font-size: 1.5rem;
+    }
+}

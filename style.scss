@@ -1,0 +1,85 @@
+@import 'utils/common.scss';
+
+body {
+    @include BodyBackground(url('assets/home/background-home-mobile.jpg'))
+}
+
+.hero {
+    @include ColumnFlex;
+    margin-top: 30%;
+}
+
+#firstline {
+    @include BarlowFont;
+}
+
+.information {
+    height: 30%;
+}
+
+.hero h1 {
+    font-size: 6rem;
+    color: white;
+    font-family: 'Bellefair', serif;
+    margin: 0;
+}
+
+#secondline {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.1rem;
+}
+
+.explore {
+    background: white;
+    color: black;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.3rem;
+    font-family: 'Bellefair', serif;
+    margin-top: 30%;
+}
+
+
+
+@media only screen and (min-width:768px) {
+    body {
+        @include BodyBackground(url('assets/home/background-home-desktop.jpg'))
+    }
+
+    .hero {
+        flex-direction: row;
+        margin: 1%;
+        align-items: center;
+    }
+
+    .information {
+        width: 60%;
+        text-align: left;
+    }
+
+    .information h1 {
+        font-size: 7rem;
+    }
+
+    #firstline {
+        letter-spacing: 0.2rem;
+        font-size: 1.6rem;
+    }
+
+    #secondline {
+        line-height: 2rem;
+        font-weight: 200;
+        width: 55%;
+        font-size: 1.2rem;
+    }
+
+    .explore {
+        width: 12rem;
+        height: 12rem;
+        margin: 5% 10% 0 10%;
+    }
+}
