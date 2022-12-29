@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+.main-header {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#sitelogo {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#menu-btn {
+  aspect-ratio: 1;
+  cursor: pointer;
+  top: 2%;
+  right: 3%;
+  width: 2rem;
+  padding: 5%;
+  background-color: transparent;
+  background-image: url("assets/shared/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  border: 0;
+  position: absolute;
+  z-index: 9;
+  background-position: center;
+}
+
+#menu-btn[data-image=close] {
+  background-image: url("assets/shared/icon-close.svg");
+}
+
+#menu-btn:focus {
+  outline: none;
+  border: none;
+}
+
+.nav-menu[data-visible=true] {
+  transform: translateX(0);
+}
+
+#menuline {
+  display: none;
+}
+
+.nav-menu ul > a {
+  z-index: 1;
+  font-size: 1.2rem;
+  font-family: "Barlow Condensed";
+  text-transform: uppercase;
+  margin: 10% 2%;
+}
+
+.nav-menu ul #number {
+  color: white;
+  margin-right: 2%;
+}
+
+.nav-menu {
+  height: 100vh;
+  display: flex;
+  right: 0;
+  width: 80vw;
+  list-style: none;
+  flex-direction: column;
+  position: fixed;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  margin: 0;
+  padding: 0 5%;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-menu ul {
+  margin: 50% 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu li {
+  list-style: none;
+  z-index: 1;
+  font-size: 1.2rem;
+  font-family: "Barlow Condensed";
+  text-transform: uppercase;
+  margin: 20% 0;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background: url("assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #D0D6F9;
+    background-attachment: fixed;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  #menu-btn {
+    display: none;
+  }
+  #sitelogo {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 2%;
+  }
+  #menuline {
+    display: inline-block;
+    width: 45%;
+    border-bottom: 0.5px solid rgba(245, 245, 245, 0.383);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    height: 1px;
+    margin-left: 0;
+    z-index: 2;
+  }
+  .main-header {
+    display: flex;
+    align-items: center;
+  }
+  .nav-menu {
+    transform: translateX(0);
+    height: 10%;
+    width: 50%;
+    padding-left: 0;
+    position: absolute;
+  }
+  .nav-menu ul {
+    flex-direction: row;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
+  .nav-menu ul > li {
+    margin: 0 auto;
+  }
+  .nav-menu ul #number {
+    margin-right: 5%;
+  }
+}
+body {
+  background: url("assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #D0D6F9;
+  background-attachment: fixed;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5%;
+  margin-top: 30%;
+}
+
+#firstline {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.2rem;
+}
+
+.information {
+  height: 30%;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  color: white;
+  font-family: "Bellefair", serif;
+  margin: 0;
+}
+
+#secondline {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.1rem;
+}
+
+.explore {
+  background: white;
+  color: black;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.3rem;
+  font-family: "Bellefair", serif;
+  margin-top: 30%;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background: url("assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #D0D6F9;
+    background-attachment: fixed;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .hero {
+    flex-direction: row;
+    margin: 1%;
+    align-items: center;
+  }
+  .information {
+    width: 60%;
+    text-align: left;
+  }
+  .information h1 {
+    font-size: 7rem;
+  }
+  #firstline {
+    letter-spacing: 0.2rem;
+    font-size: 1.6rem;
+  }
+  #secondline {
+    line-height: 2rem;
+    font-weight: 200;
+    width: 55%;
+    font-size: 1.2rem;
+  }
+  .explore {
+    width: 12rem;
+    height: 12rem;
+    margin: 5% 10% 0 10%;
+  }
+}/*# sourceMappingURL=style.css.map */
