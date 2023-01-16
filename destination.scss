@@ -8,11 +8,12 @@ body {
     display: flex;
     list-style: none;
     justify-content: center;
-    padding-left: 9%;
+    gap: 26px;
+    padding: 0;
 }
 
 .planetlist li {
-    margin-right: 25%;
+    // margin-right: 25%;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 0.95rem;
 }
@@ -52,6 +53,7 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
     padding: 5%;
     margin: 0;
+    height: 84px;
 }
 
 .extratitle {
@@ -106,15 +108,16 @@ hr {
     .planetcontainer {
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 10%;
         align-items: center;
     }
 
     .dest_title {
         text-align: left;
         font-weight: 400;
-        margin: 0;
-        font-size: 5rem;
+        // margin: 0;
+        font-size: 6.25rem;
     }
 
     .dest_info {
@@ -122,11 +125,17 @@ hr {
         text-align: left;
         font-weight: 100;
         color: #8b91b1ec;
+        height: 128px;
+        width: 400px;
+        font-size: 1.3rem;
+        line-height: 32px;
+        margin-top: 4%;
     }
 
     .planetlist {
         justify-content: left;
         padding: 0;
+        margin-bottom: 3%;
     }
 
     #active {

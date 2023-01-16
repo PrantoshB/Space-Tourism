@@ -54,12 +54,12 @@ a {
   font-size: 1.2rem;
   font-family: "Barlow Condensed";
   text-transform: uppercase;
-  margin: 10% 2%;
+  margin: 10% 5%;
 }
 
 .nav-menu ul #number {
-  color: white;
-  margin-right: 2%;
+  color: rgb(255, 255, 255);
+  margin-right: 5%;
 }
 
 .nav-menu {
@@ -91,6 +91,7 @@ a {
   font-family: "Barlow Condensed";
   text-transform: uppercase;
   margin: 20% 0;
+  color: #D0D6F9;
 }
 
 @media only screen and (min-width: 768px) {
@@ -129,9 +130,10 @@ a {
   .nav-menu {
     transform: translateX(0);
     height: 10%;
-    width: 50%;
+    width: 45%;
     padding-left: 0;
     position: absolute;
+    background: rgba(45, 45, 45, 0.3411764706);
   }
   .nav-menu ul {
     flex-direction: row;
